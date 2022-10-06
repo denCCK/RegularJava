@@ -54,5 +54,52 @@ public class RegularExpressionsTestLibrary {
         Assert.assertEquals(false, Checker.RegularIP("192.ab.31"));
     }
 
-
+    @Test
+    public void GUIDCheckCorrect1() {
+        Assert.assertEquals(true, Checker.RegularGUID("b523b685-c83e-48f3-abca-aae73a36091f"));
+    }
+    @Test
+    public void GUIDCheckCorrect2() {
+        Assert.assertEquals(true, Checker.RegularGUID("e23b8f62-d273-4046-85a7-d19a945f6ba4"));
+    }
+    @Test
+    public void GUIDCheckCorrect3() {
+        Assert.assertEquals(true, Checker.RegularGUID("ffd4b3f3-2046-4eff-a401-f92c6f9e85d3"));
+    }
+    @Test
+    public void GUIDCheckCorrect4() {
+        Assert.assertEquals(true, Checker.RegularGUID("61f16cd1-9379-4f71-93f7-6a0ff57267ff"));
+    }
+    @Test
+    public void GUIDCheckCorrect5() {
+        Assert.assertEquals(true, Checker.RegularGUID("124b967f-69d3-4d9d-9d4a-30314b591aad"));
+    }
+    @Test
+    public void GUIDCheckCorrect6() {
+        Assert.assertEquals(true, Checker.RegularGUID("0f81b3dc-f68c-40f1-9e91-16765747402d"));
+    }
+    @Test
+    public void GUIDCheckWrongSize1() {
+        Assert.assertEquals(false, Checker.RegularGUID("0f81b-f68c-40f1-9e91-16765747402d"));
+    }
+    @Test
+    public void GUIDCheckWrongSize2() {
+        Assert.assertEquals(false, Checker.RegularGUID("0f81b3dc-f68c-40f1-9e91-1"));
+    }
+    @Test
+    public void GUIDCheckWrongStructure1() {
+        Assert.assertEquals(false, Checker.RegularGUID("0f81b3dc-f68c-40f1-9e91"));
+    }
+    @Test
+    public void GUIDCheckWrongStructure2() {
+        Assert.assertEquals(false, Checker.RegularGUID("0f81b3dc-f68c-40f1-9e91-16765747402d-31d2"));
+    }
+    @Test
+    public void GUIDCheckWrongStructure3() {
+        Assert.assertEquals(false, Checker.RegularGUID("0f81b3dc-f68c./40f1-9e91-16765747402d"));
+    }
+    @Test
+    public void GUIDCheckWrongStructureAndSize() {
+        Assert.assertEquals(false, Checker.RegularGUID("0f81b3dc-f68c-40f1-9e91,,.16765747402d-31d2"));
+    }
 }
