@@ -151,4 +151,53 @@ public class RegularExpressionsTestLibrary {
     public void URLCheckWrongSeparator() {
         Assert.assertEquals(false, Checker.RegularURL("https:::////www.google.com"));
     }
+
+    @Test
+    public void PassCheckCorrect1() {
+        Assert.assertEquals(true, Checker.RegularPass("C00l_Pass"));
+    }
+    @Test
+    public void PassCheckCorrect2() {
+        Assert.assertEquals(true, Checker.RegularPass("SupperPas1"));
+    }
+    @Test
+    public void PassCheckCorrect3() {
+        Assert.assertEquals(true, Checker.RegularPass("sTRonG_pass99"));
+    }
+    @Test
+    public void PassCheckCorrect4() {
+        Assert.assertEquals(true, Checker.RegularPass("Qwerty12"));
+    }
+    @Test
+    public void PassCheckCorrect5() {
+        Assert.assertEquals(true, Checker.RegularPass("123456789_Abc"));
+    }
+    @Test
+    public void PassCheckCorrect6() {
+        Assert.assertEquals(true, Checker.RegularPass("12_09_1986_Bd"));
+    }
+    @Test
+    public void PassCheckWrongSize() {
+        Assert.assertEquals(false, Checker.RegularPass("C00l"));
+    }
+    @Test
+    public void PassCheckWrongCharacter() {
+        Assert.assertEquals(false, Checker.RegularPass("Qwerty=12%"));
+    }
+    @Test
+    public void PassCheckWrongStructure1() {
+        Assert.assertEquals(false, Checker.RegularPass("Cool_pass"));
+    }
+    @Test
+    public void PassCheckWrongStructure2() {
+        Assert.assertEquals(false, Checker.RegularPass("123456789"));
+    }
+    @Test
+    public void PassCheckWrongStructure3() {
+        Assert.assertEquals(false, Checker.RegularPass("NOTAPASSWORD"));
+    }
+    @Test
+    public void PassCheckWrongStructure4() {
+        Assert.assertEquals(false, Checker.RegularPass("Pass_With whitespace11"));
+    }
 }

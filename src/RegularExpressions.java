@@ -18,6 +18,7 @@ public class RegularExpressions {
     }
 
     public boolean RegularPass(String incomingString) {
-        return true;
+        String regexPass = "^(?=.{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$)([a-zA-Z0-9_])*$";
+        return incomingString.matches(regexPass);
     }
 }
