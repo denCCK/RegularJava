@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4000053d-a9f1-4226-9a9f-02af9f49ebfe" name="Changes" comment="Коммит первый, проверка IP">
+    <list default="true" id="4000053d-a9f1-4226-9a9f-02af9f49ebfe" name="Changes" comment="GUID(UUID)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RegularExpressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegularExpressions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RegularExpressionsTestLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegularExpressionsTestLibrary.java" afterDir="false" />
@@ -30,18 +30,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/CodeProjects/RegularJava/src/junit-4.13.2.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CodeProjects/RegularJava/src/junit-4.13.2.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="RegularExpressionsTestLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RegularJava" />
@@ -66,7 +66,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665074738383</updated>
-      <workItem from="1665074747422" duration="9235000" />
+      <workItem from="1665074747422" duration="13952000" />
+      <workItem from="1665125628556" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Коммит первый, проверка IP">
       <created>1665081279900</created>
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665081279900</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GUID(UUID)">
+      <created>1665085214983</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665085214983</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Коммит первый, проверка IP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Коммит первый, проверка IP" />
+    <MESSAGE value="GUID(UUID)" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUID(UUID)" />
   </component>
 </project>

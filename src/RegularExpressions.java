@@ -13,7 +13,8 @@ public class RegularExpressions {
     }
 
     public boolean RegularURL(String incomingString) {
-        return true;
+        String regexURL = "^(http:\\/\\/www\\.|https:\\/\\/www\\.|http:\\/\\/|https:\\/\\/)?[a-z0-9]{2,256}([\\.]{1}[a-z0-9]{2,256})*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$";
+        return incomingString.matches(regexURL);
     }
 
     public boolean RegularPass(String incomingString) {

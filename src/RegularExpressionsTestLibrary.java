@@ -102,4 +102,53 @@ public class RegularExpressionsTestLibrary {
     public void GUIDCheckWrongStructureAndSize() {
         Assert.assertEquals(false, Checker.RegularGUID("0f81b3dc-f68c-40f1-9e91,,.16765747402d-31d2"));
     }
+
+    @Test
+    public void URLCheckCorrect1() {
+        Assert.assertEquals(true, Checker.RegularURL("https://www.youtube.com/"));
+    }
+    @Test
+    public void URLCheckCorrect2() {
+        Assert.assertEquals(true, Checker.RegularURL("http://vyatsu.ru/"));
+    }
+    @Test
+    public void URLCheckCorrect3() {
+        Assert.assertEquals(true, Checker.RegularURL("google.com"));
+    }
+    @Test
+    public void URLCheckCorrect4() {
+        Assert.assertEquals(true, Checker.RegularURL("www.google.com"));
+    }
+    @Test
+    public void URLCheckCorrect5() {
+        Assert.assertEquals(true, Checker.RegularURL("https://www.vyatsu.ru/studentu-1/spravochnaya-informatsiya/"));
+    }
+    @Test
+    public void URLCheckCorrect6() {
+        Assert.assertEquals(true, Checker.RegularURL("https://www.google.com:8008"));
+    }
+    @Test
+    public void URLCheckOneLetterDomain() {
+        Assert.assertEquals(false, Checker.RegularURL("https://a.com"));
+    }
+    @Test
+    public void URLCheckJustText() {
+        Assert.assertEquals(false, Checker.RegularURL("Hello World"));
+    }
+    @Test
+    public void URLCheckDomainWithIP() {
+        Assert.assertEquals(false, Checker.RegularURL("http://255.255.255.255"));
+    }
+    @Test
+    public void URLCheckWrongChar1() {
+        Assert.assertEquals(false, Checker.RegularURL("http://new_site.com"));
+    }
+    @Test
+    public void URLCheckWrongChar2() {
+        Assert.assertEquals(false, Checker.RegularURL("https://new-site.com"));
+    }
+    @Test
+    public void URLCheckWrongSeparator() {
+        Assert.assertEquals(false, Checker.RegularURL("https:::////www.google.com"));
+    }
 }
